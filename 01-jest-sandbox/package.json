@@ -1,0 +1,21 @@
+{
+  "name": "01-jest-sandbox",
+  "version": "1.0.0",
+  "description": "Jest Sandbox",
+  "keywords": [
+    "jest"
+  ],
+  "license": "ISC",
+  "author": "Kerim Imamovic",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.4",
+    "ts-node": "^10.9.2"
+  }
+}

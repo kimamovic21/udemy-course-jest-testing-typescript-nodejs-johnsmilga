@@ -19,3 +19,25 @@ Section 02: Getting started with Jest in Node & Typescript
 
 04. Course repo
 -Github repo: https://github.com/john-smilga/jest-course/
+
+05. Project setup: TypeScript, Node.js & Jest
+-open link: https://jestjs.io
+-open link: https://www.npmjs.com/package/jest
+-open link: https://www.npmjs.com/package/ts-node
+-open link: https://www.npmjs.com/package/ts-jest
+-open link: https://www.npmjs.com/package/@types/jest
+-type command: mkdir 01-jest-sandbox
+-type command: npm init
+-type command: npm i --save-dev ts-node jest ts-jest @types/jest
+-create .gitignore file
+-create jest.config.ts file
+-create tsconfig.json file
+-create folder src and sum.ts file
+-in sum.ts file create and export function sum()
+-in folder src create folder __tests__ and sum.spec.ts file
+-in sum.spec.ts file import function sum from sum.ts file
+-invoke function describe() with two arguments
+-first argument is test description and second argument is anonymous function
+-type command: npx jest
+-in package.json file update command test
+-type command: npm run test
