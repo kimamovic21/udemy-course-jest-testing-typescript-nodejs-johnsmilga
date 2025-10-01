@@ -7,3 +7,5 @@ Section 01: Introduction
 
 01. Important Info !!!
 -Github repo: https://github.com/john-smilga/jest-course/
+
+02. Course requirements and testing info
