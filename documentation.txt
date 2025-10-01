@@ -3,12 +3,19 @@ Mastering Jest Testing with TypeScript and Node.js
 Build solid testing skills with Jest, TypeScript, and Node - from setup to mocks, spies, and production error handling
 
 
+
 Section 01: Introduction
 
 
 01. Important Info !!!
--Github repo: https://github.com/john-smilga/jest-course/
 
 02. Course requirements and testing info
 
 03. Unit testing and Jest info
+
+
+
+Section 02: Getting started with Jest in Node & Typescript
+
+04. Course repo
+-Github repo: https://github.com/john-smilga/jest-course/
