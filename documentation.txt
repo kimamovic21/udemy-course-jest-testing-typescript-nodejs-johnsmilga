@@ -5,7 +5,10 @@ Build solid testing skills with Jest, TypeScript, and Node - from setup to mocks
 
 Section 01: Introduction
 
+
 01. Important Info !!!
 -Github repo: https://github.com/john-smilga/jest-course/
 
 02. Course requirements and testing info
+
+03. Unit testing and Jest info
