@@ -57,3 +57,6 @@ Section 03: Jest fundamentals
 07. Jest syntax
 -in sum.spec.ts invoke function for empty test
 -type command: npm run test
+-open link: https://jestjs.io/docs/expect
+
+08. SUT and AAA
