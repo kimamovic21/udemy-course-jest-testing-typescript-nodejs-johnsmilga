@@ -60,3 +60,16 @@ Section 03: Jest fundamentals
 -open link: https://jestjs.io/docs/expect
 
 08. SUT and AAA
+
+09. Utils tests
+-type command: npm install --save-dev jest@29 ts-jest@29
+-create utils.ts file
+-in utils.ts file create and export more functions
+-in folder __tests__ create utils.spec.ts file
+-type command: npm run test
+-in package.json file add command: test:watch
+-type command: npm run test:watch
+-in utils.spec.ts file import functions from utils.ts file
+-invoke function describe()
+-in function describe() invoke more functions it()
+-type command: npm run test:watch -- utils.spec.ts
