@@ -80,3 +80,9 @@ Section 03: Jest fundamentals
 -create calculator.spec.ts file
 -in calculator.spec.ts file import class Calculator
 -type command: npm run test:watch -- calculator.spec.ts
+
+11. Jest hooks
+-in calculator.spec.ts file, in function describe create variable let sut: Calculator (system under test)
+-invoke function beforeEach()
+-in functions it() remove variable const calculator
+-type command: npm run test:watch -- calculator.spec.ts
