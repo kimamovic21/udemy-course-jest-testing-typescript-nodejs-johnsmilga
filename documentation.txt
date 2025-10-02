@@ -53,3 +53,7 @@ Section 03: Jest fundamentals
 -type command: npm i --save-dev @types/node
 -type command: npm test -- fileName.spec.ts
 -type command: npm test -- sum.spec.ts
+
+07. Jest syntax
+-in sum.spec.ts invoke function for empty test
+-type command: npm run test
