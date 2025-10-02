@@ -41,3 +41,15 @@ Section 02: Getting started with Jest in Node & Typescript
 -type command: npx jest
 -in package.json file update command test
 -type command: npm run test
+
+
+
+Section 03: Jest fundamentals
+
+06. Test file location
+-create README.md file
+-copy files from folder 01-jest-sandbox
+-type command: npm i
+-type command: npm i --save-dev @types/node
+-type command: npm test -- fileName.spec.ts
+-type command: npm test -- sum.spec.ts

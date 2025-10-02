@@ -9,3 +9,7 @@
 ##### Project 1
 
 ###### 01-jest-sandbox
+
+##### Project 2
+
+###### 02-jest-tutorial
