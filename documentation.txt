@@ -113,3 +113,9 @@ Section 04: Test doubles explained: Mocks, Stubs, Spies & more
 -in package.json file add commands test and test:watch
 -type command: npm run test:watch
 -type command: npm run test:watch -- bookService.spec.ts
+
+13. Getting started with Stubs and Fakes
+-in folder 02-orders create orderService.spec.ts file
+-in orderService.spec.ts file import class OrderService from OrderService.ts file
+-create classes InventoryServiceStub and class FakePaymentGateway
+-type command: npm run test:watch -- orderService.spec.ts
