@@ -124,3 +124,9 @@ Section 04: Test doubles explained: Mocks, Stubs, Spies & more
 -in orderService.ts file invoke function describe()
 -in functions describe() invoke more functions it ()
 -type command: npm run test:watch -- orderService.spec.ts
+
+15. Refactor challenge
+-in orderService.spec.ts file create type Transaction
+-refactor class FakePaymentGateway
+-refactor logic in function describe()
+-type command: npm run test:watch -- orderService.spec.ts
