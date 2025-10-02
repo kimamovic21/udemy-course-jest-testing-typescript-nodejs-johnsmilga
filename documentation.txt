@@ -17,6 +17,7 @@ Section 01: Introduction
 
 Section 02: Getting started with Jest in Node & Typescript
 
+
 04. Course repo
 -Github repo: https://github.com/john-smilga/jest-course/
 
@@ -45,6 +46,7 @@ Section 02: Getting started with Jest in Node & Typescript
 
 
 Section 03: Jest fundamentals
+
 
 06. Test file location
 -create README.md file
@@ -86,3 +88,28 @@ Section 03: Jest fundamentals
 -invoke function beforeEach()
 -in functions it() remove variable const calculator
 -type command: npm run test:watch -- calculator.spec.ts
+
+
+
+Section 04: Test doubles explained: Mocks, Stubs, Spies & more
+
+
+12. Dummy test doubles
+-type command: mkdir 03-test-doubles
+-type command: cd 03-test-doubles
+-create README.md file
+-type command: npm init
+-create files jest.config.ts and tsconfig.json
+-create .gitignore file
+-type command: npm i
+-create folder src and index.ts file
+-in folder src create folder services
+-in folder services create three folders 01-books, 02-orders and 03-users with .ts files
+-in folder 01-books create bookService.spec.ts file
+-in bookService.spec.ts file import function getBookDisplayTitle from BookService.ts file
+-invoke function describe() with two arguments
+-in function describe() add test description as first argument
+-invoke function it() as second argument
+-in package.json file add commands test and test:watch
+-type command: npm run test:watch
+-type command: npm run test:watch -- bookService.spec.ts
