@@ -119,3 +119,8 @@ Section 04: Test doubles explained: Mocks, Stubs, Spies & more
 -in orderService.spec.ts file import class OrderService from OrderService.ts file
 -create classes InventoryServiceStub and class FakePaymentGateway
 -type command: npm run test:watch -- orderService.spec.ts
+
+14. Stubs and Fakes in action
+-in orderService.ts file invoke function describe()
+-in functions describe() invoke more functions it ()
+-type command: npm run test:watch -- orderService.spec.ts
