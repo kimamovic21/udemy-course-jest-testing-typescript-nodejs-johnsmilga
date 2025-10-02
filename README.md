@@ -4,6 +4,8 @@
 
 ### Original Github Repo: [https://github.com/john-smilga/jest-course]
 
+### Udemy Course Link: [https://www.udemy.com/course/mastering-jest-testing-with-typescript-and-nodejs]
+
 #### Projects
 
 ##### Project 1

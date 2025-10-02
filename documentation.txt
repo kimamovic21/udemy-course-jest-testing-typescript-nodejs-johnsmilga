@@ -73,3 +73,10 @@ Section 03: Jest fundamentals
 -invoke function describe()
 -in function describe() invoke more functions it()
 -type command: npm run test:watch -- utils.spec.ts
+
+10. Class tests
+-create Calculator.ts file
+-in Calculator.ts file create and export class Calculator
+-create calculator.spec.ts file
+-in calculator.spec.ts file import class Calculator
+-type command: npm run test:watch -- calculator.spec.ts
