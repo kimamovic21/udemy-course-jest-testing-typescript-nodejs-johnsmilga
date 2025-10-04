@@ -138,3 +138,13 @@ Section 04: Test doubles explained: Mocks, Stubs, Spies & more
 -in function describe() invoke three functions it()
 -in functions it() invoke functions jest.spyOn()
 -type command: npm run test:watch -- 01-example.spec.ts
+
+17. Clearing and resetting mocks in Jest
+-in folder mocks create 02-example-spec.ts file
+-in 02-example-spec.ts file create variable object const user
+-invoke function describe()
+-in function describe() create variable let roleSpy with type
+-invoke function beforeEach()
+-invoke two functions it()
+-invoke function afterEach()
+-type command: npm run test:watch -- 02-example.spec.ts
