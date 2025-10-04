@@ -130,3 +130,11 @@ Section 04: Test doubles explained: Mocks, Stubs, Spies & more
 -refactor class FakePaymentGateway
 -refactor logic in function describe()
 -type command: npm run test:watch -- orderService.spec.ts
+
+16. Using Spies in Jest with jest.spyOn()
+-create folder mocks and 01-example.spec.ts file
+-in 01-example.spec.ts file create variable object const user
+-invoke function describe()
+-in function describe() invoke three functions it()
+-in functions it() invoke functions jest.spyOn()
+-type command: npm run test:watch -- 01-example.spec.ts

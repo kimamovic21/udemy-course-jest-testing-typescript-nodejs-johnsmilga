@@ -6,12 +6,16 @@
 
 ### Udemy Course Link: [https://www.udemy.com/course/mastering-jest-testing-with-typescript-and-nodejs]
 
-#### Projects
+### Projects
 
-##### Project 1
+#### Project 1
 
-###### 01-jest-sandbox
+##### 01-jest-sandbox
 
-##### Project 2
+#### Project 2
 
-###### 02-jest-tutorial
+##### 02-jest-tutorial
+
+#### Project 3
+
+##### 03-test-doubles
