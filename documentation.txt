@@ -181,3 +181,13 @@ Section 04: Test doubles explained: Mocks, Stubs, Spies & more
 -invoke function jest.mock('./user')
 -invoke function it () with description - shows mock gotcha
 -type command: npm run test:watch -- user.spec.ts
+
+22. Mock external third party and Node's built-in modules
+-create folder modules and externalModules.spec.ts file
+-in externalModules.spec.ts file import module fs
+-invoke function jest.mock()
+-invoke function describe() with two arguments
+-first argument is test description and second argument is anonymous callback function
+-in callback function invoke function it() with description - should mock file reading
+-invoke function it() with description - should spy on file reading
+-type command: npm run test:watch -- externalModules.spec.ts
