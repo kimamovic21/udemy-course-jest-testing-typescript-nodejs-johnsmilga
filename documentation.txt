@@ -170,3 +170,14 @@ Section 04: Test doubles explained: Mocks, Stubs, Spies & more
 -in userService.spec.ts file invoke function it() with description - should return error message if name is not provided
 -type command: npm run test:watch -- userService.spec.ts
 -invoke function it() with description - should return error message if email value is not test@test.com
+
+21. Mocking modules with jest.mock()
+-create user.spec.ts file
+-in user.spec.t file import variable user from user.ts file
+-invoke function describe() with two arguments
+-first argument is test description and second argument is anonymous callback function
+-in callback function invoke function it() with description - mocks single method using jest.fn()
+-comment code in function it() and invoke new function it() with same description
+-invoke function jest.mock('./user')
+-invoke function it () with description - shows mock gotcha
+-type command: npm run test:watch -- user.spec.ts
