@@ -148,3 +148,6 @@ Section 04: Test doubles explained: Mocks, Stubs, Spies & more
 -invoke two functions it()
 -invoke function afterEach()
 -type command: npm run test:watch -- 02-example.spec.ts
+
+18. UserService testing setup: spying with Jest begins
+-type command: npm run dev

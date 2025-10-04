@@ -1,5 +1,3 @@
-// UserService.ts
-
 import { NewsletterService } from './NewsletterService';
 import { DatabaseService } from './DatabaseService';
 
