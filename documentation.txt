@@ -151,3 +151,17 @@ Section 04: Test doubles explained: Mocks, Stubs, Spies & more
 
 18. UserService testing setup: spying with Jest begins
 -type command: npm run dev
+
+19. Jest spyOn in action - successful UserService response
+-create userService.spec.ts file
+-in userService.spec.ts file import classes UserService, DatabaseService and NewsletterService
+-type command: npm run test:watch -- userService.spec.ts
+-invoke function describe()
+-add to function describe() two arguments
+-first argument is test description and second argument is anonymous callback function
+-in callback function create five variables
+-invoke function it() with description - should successfully register user and return success message
+-comment function it()
+-create variables let createUserSpy and let subscribeUserSpy with types
+-invoke functions beforeEach() and afterEach()
+-invoke function it() with description - should successfully register user and return success message

@@ -23,6 +23,7 @@ export class NewsletterService {
 
     const data = (await response.json()) as { msg: string };
     console.log('NewsletterService API Response : ', data);
+
     return data;
   };
 };
