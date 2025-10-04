@@ -165,3 +165,8 @@ Section 04: Test doubles explained: Mocks, Stubs, Spies & more
 -create variables let createUserSpy and let subscribeUserSpy with types
 -invoke functions beforeEach() and afterEach()
 -invoke function it() with description - should successfully register user and return success message
+
+20. Simulating errors with jest.spyOn() in Jest tests
+-in userService.spec.ts file invoke function it() with description - should return error message if name is not provided
+-type command: npm run test:watch -- userService.spec.ts
+-invoke function it() with description - should return error message if email value is not test@test.com

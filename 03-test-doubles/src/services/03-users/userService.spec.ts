@@ -43,4 +43,47 @@ describe('UserService', () => {
     expect(subscribeUserSpy).toHaveBeenCalledWith(mockUser);
     expect(result).toEqual(successResponse);
   });
+
+  it('should return error message if name is not provided', async () => {
+    const invalidInput = { name: '', email: mockEmail };
+    const userService = new UserService(invalidInput.name, invalidInput.email);
+
+    createUserSpy.mockImplementation(() => {
+      return Promise.reject('Name is required');
+    });
+
+    const result = await userService.registerUser();
+
+    expect(createUserSpy).toHaveBeenCalledWith(
+      invalidInput.name,
+      invalidInput.email
+    );
+    expect(subscribeUserSpy).not.toHaveBeenCalled();
+    expect(result).toEqual(errorResponse);
+  });
+
+  it('should return error message if email value is not test@test.com', async () => {
+    const invalidInput = { name: mockName, email: 'invalid@email.com' };
+    const invalidUser = {
+      id: 1,
+      name: invalidInput.name,
+      email: invalidInput.email,
+      role: 'user',
+    };
+    const userService = new UserService(invalidInput.name, invalidInput.email);
+
+    createUserSpy.mockResolvedValue(invalidUser);
+    subscribeUserSpy.mockImplementation(() => {
+      return Promise.reject('Email is not valid');
+    });
+
+    const result = await userService.registerUser();
+
+    expect(createUserSpy).toHaveBeenCalledWith(
+      invalidInput.name,
+      invalidInput.email
+    );
+    expect(subscribeUserSpy).toHaveBeenCalledWith(invalidUser);
+    expect(result).toEqual(errorResponse);
+  });
 });
