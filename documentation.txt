@@ -191,3 +191,22 @@ Section 04: Test doubles explained: Mocks, Stubs, Spies & more
 -in callback function invoke function it() with description - should mock file reading
 -invoke function it() with description - should spy on file reading
 -type command: npm run test:watch -- externalModules.spec.ts
+
+
+
+Section 05: How to test for thrown errors in Jest
+
+
+23. Jest Error handling: first steps
+-type command: mkdir 04-testing-errors
+-add starter folder and files
+-in folder 01-users create UserService.spec.ts file
+-type command: npm run test:watch -- UserService.spec.ts
+-in UserService.spec.ts file import classes UserService, NewsletterService and DatabaseService
+-invoke function describe with two arguments
+-first argument is test name - UserService
+-second argument is anonymous callback function
+-in callback function create four variables
+-create two variables let createUserSpy and let subscribeUserSpy with types
+-invoke functions beforeEach() and afterEach()
+-invoke function it() with description - should successfully register user and return success message

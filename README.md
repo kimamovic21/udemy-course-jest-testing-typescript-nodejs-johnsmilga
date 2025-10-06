@@ -19,3 +19,7 @@
 #### Project 3
 
 ##### 03-test-doubles
+
+#### Project 4
+
+##### 04-testing-errors
