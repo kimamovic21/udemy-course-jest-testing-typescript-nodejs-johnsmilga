@@ -262,3 +262,9 @@ Section 06: Challenge - Test hashing library
 -invoke function it() with description - should generate different hashes for different inputs
 -invoke function it() with description - should generate different hashes with different secrets
 -invoke function it() with description - should handle empty input
+
+29. Test coverage
+-check folder coverage
+-comment code in index.ts file
+-type command: npm run test:watch -- HashGenerator.spec.ts
+-open link: http://127.0.0.1:5500/05-hash-generator/coverage/index.html

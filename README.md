@@ -23,3 +23,7 @@
 #### Project 4
 
 ##### 04-testing-errors
+
+#### Project 5
+
+##### 05-hash-generator
