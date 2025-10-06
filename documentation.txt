@@ -228,3 +228,20 @@ Section 05: How to test for thrown errors in Jest
 -in function beforeEach() invoke methods CustomLogger.error and CustomLogger.info
 -invoke function it() with description - should return error message if name is not provided 2
 -type command: npm run test:watch -- UserService.spec.ts
+
+
+
+Section 06: Challenge - Test hashing library
+
+
+27. Intro to challenge
+-type command: mkdir 05-hash-generator
+-add README.md file
+-type command: cd 05-hash-generator
+-type command: npm init
+-create folder src and files HashGenerator.ts and index.ts
+-create .gitignore file
+-create files jest.config.ts and tsconfig.json
+-type command: npm i
+-update package.json file with commands: dev, test, test:cov and test:watch
+-type command: npm run dev
