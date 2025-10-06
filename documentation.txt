@@ -214,3 +214,11 @@ Section 05: How to test for thrown errors in Jest
 24. Exploring error testing strategies
 -invoke function it with description - should throw error message if name is not provided
 -type command: npm run test:watch -- UserService.spec.ts
+
+25. Jest: Testing custom thrown errors
+-open link: https://www.npmjs.com/package/chalk
+-in UserService.ts file import classes from folder utils
+-invoke methods CustomLogger.info() and CustomError.throwError()
+-in UserService.spec.ts file update function it() with description - should return error message if name is not provided
+-update block catch (error)
+-type command: npm run test:watch -- UserService.spec.ts

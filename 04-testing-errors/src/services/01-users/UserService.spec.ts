@@ -1,6 +1,9 @@
 import { UserService } from './UserService';
 import { NewsletterService } from './NewsletterService';
 import { DatabaseService } from './DatabaseService';
+import { CustomError } from '../../utils/CustomError';
+import { AppCodes } from '../../utils/AppCodes';
+import { HttpCodes } from '../../utils/HttpCodes';
 
 describe('UserService', () => {
   const successResponse = { msg: 'user registered successfully' };
@@ -16,10 +19,12 @@ describe('UserService', () => {
 
   let createUserSpy: jest.SpyInstance;
   let subscribeUserSpy: jest.SpyInstance;
+  let customErrorSpy: jest.SpyInstance;
 
   beforeEach(() => {
     createUserSpy = jest.spyOn(DatabaseService, 'createUser');
     subscribeUserSpy = jest.spyOn(NewsletterService, 'subscribeUser');
+    customErrorSpy = jest.spyOn(CustomError, 'throwError');
   });
 
   afterEach(() => {
@@ -39,7 +44,7 @@ describe('UserService', () => {
     expect(result).toEqual(successResponse);
   });
 
-  it('should throw error message if name is not provided', async () => {
+  it('should return error message if name is not provided', async () => {
     const invalidInput = { name: '', email: mockEmail };
     const userService = new UserService(invalidInput.name, invalidInput.email);
 
@@ -51,8 +56,12 @@ describe('UserService', () => {
       await userService.registerUser();
       fail('Should have thrown an error');
     } catch (error) {
-      expect(error).toBeInstanceOf(Error);
-      expect((error as Error).message).toBe('User registration failed');
+      expect(error).toBeInstanceOf(CustomError);
+      expect(customErrorSpy).toHaveBeenCalledWith(
+        HttpCodes.INTERNAL_SERVER_ERROR,
+        AppCodes.REGISTER_USER_FAILED,
+        'failed to register user'
+      );
     };
   });
 });
