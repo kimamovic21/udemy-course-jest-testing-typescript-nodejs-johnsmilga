@@ -245,3 +245,20 @@ Section 06: Challenge - Test hashing library
 -type command: npm i
 -update package.json file with commands: dev, test, test:cov and test:watch
 -type command: npm run dev
+
+28. Write tests
+-in folder src create HashGenerator.spec.ts file
+-type command: npm run dev test:cov 
+-in HashGenerator.spec.ts file import class HashGenerator
+-invoke function describe() with two arguments
+-first argument is test suite description - HashGenerator
+-second argument is anonymous callback function
+-in callback function create three variables
+-invoke function it() with description - should create a new instance with hash salt
+-type command: npm run test:watch -- HashGenerator.spec.ts
+-invoke function it() with description - should create different instances when called multiple times
+-invoke function it() with description - should generate URL-safe hashes
+-invoke function it() with description - should generate consistent hashes for same input
+-invoke function it() with description - should generate different hashes for different inputs
+-invoke function it() with description - should generate different hashes with different secrets
+-invoke function it() with description - should handle empty input
