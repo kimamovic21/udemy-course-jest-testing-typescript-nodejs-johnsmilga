@@ -222,3 +222,9 @@ Section 05: How to test for thrown errors in Jest
 -in UserService.spec.ts file update function it() with description - should return error message if name is not provided
 -update block catch (error)
 -type command: npm run test:watch -- UserService.spec.ts
+
+26. Catching errors and silencing logs with Jest
+-in UserService.spec.ts file import class CustomLogger
+-in function beforeEach() invoke methods CustomLogger.error and CustomLogger.info
+-invoke function it() with description - should return error message if name is not provided 2
+-type command: npm run test:watch -- UserService.spec.ts
