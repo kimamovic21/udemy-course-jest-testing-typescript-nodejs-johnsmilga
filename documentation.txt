@@ -84,7 +84,7 @@ Section 03: Jest fundamentals
 -type command: npm run test:watch -- calculator.spec.ts
 
 11. Jest hooks
--in calculator.spec.ts file, in function describe create variable let sut: Calculator (system under test)
+-in calculator.spec.ts file, in function describe() create variable let sut: Calculator (system under test)
 -invoke function beforeEach()
 -in functions it() remove variable const calculator
 -type command: npm run test:watch -- calculator.spec.ts
@@ -203,10 +203,14 @@ Section 05: How to test for thrown errors in Jest
 -in folder 01-users create UserService.spec.ts file
 -type command: npm run test:watch -- UserService.spec.ts
 -in UserService.spec.ts file import classes UserService, NewsletterService and DatabaseService
--invoke function describe with two arguments
+-invoke function describe() with two arguments
 -first argument is test name - UserService
 -second argument is anonymous callback function
 -in callback function create four variables
 -create two variables let createUserSpy and let subscribeUserSpy with types
 -invoke functions beforeEach() and afterEach()
 -invoke function it() with description - should successfully register user and return success message
+
+24. Exploring error testing strategies
+-invoke function it with description - should throw error message if name is not provided
+-type command: npm run test:watch -- UserService.spec.ts

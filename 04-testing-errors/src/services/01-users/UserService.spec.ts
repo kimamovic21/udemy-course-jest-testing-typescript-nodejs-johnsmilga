@@ -38,4 +38,21 @@ describe('UserService', () => {
     expect(subscribeUserSpy).toHaveBeenCalledWith(mockUser);
     expect(result).toEqual(successResponse);
   });
+
+  it('should throw error message if name is not provided', async () => {
+    const invalidInput = { name: '', email: mockEmail };
+    const userService = new UserService(invalidInput.name, invalidInput.email);
+
+    createUserSpy.mockImplementation(() => {
+      return Promise.reject('Name is required');
+    });
+
+    try {
+      await userService.registerUser();
+      fail('Should have thrown an error');
+    } catch (error) {
+      expect(error).toBeInstanceOf(Error);
+      expect((error as Error).message).toBe('User registration failed');
+    };
+  });
 });
